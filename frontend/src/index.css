@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.verification_code {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center
+}
+
+.verification_input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.verification_input input {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  margin: 0 5px;
+  text-align: center;
+  border-radius: 5px;
+  border-bottom: 2px solid #000;
+}
+
+.verification_input input:focus {
+  outline: none;
+}
+
+.verification_code button {
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  padding: 10px 20px;
+  min-width: 150px;
+  cursor: pointer;
+  background-color: #11064a;
+}
+
+.verification_box {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.error {
+  margin-top: 5px;
+  color: red;
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
